@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congruence Closure Algorithm</title>
+    <style>
+        #formula {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            padding: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleInput(enabled) {
+            const formulaInput = document.getElementById('formula');
+            formulaInput.disabled = !enabled;
+        }
+    </script>
+</head>
+<body>
+    <h1>Congruence Closure Algorithm</h1>
+    <form method="POST" action="/">
+        <label for="formula">Formula:</label>
+        <input type="text" id="formula" name="formula" placeholder="Enter formula" required {{ 'disabled' if result else '' }}>
+        <button type="submit" {{ 'disabled' if result else '' }}>Submit</button>
+    </form>
+    {% if result %}
+    <div class="result">
+        <p><strong>Result:</strong> {{ result }}</p>
+        <p>Do you want to enter another formula?</p>
+        <form method="POST" action="/">
+            <button name="continue" value="yes" onclick="toggleInput(true)">Yes</button>
+            <button name="continue" value="no" onclick="toggleInput(false)">No</button>
+        </form>
+    </div>
+    {% endif %}
+</body>
+</html>
