@@ -9,6 +9,7 @@ This tool is designed for students and learners who are interested in exploring 
   3. Equivalence Class Formation: Watch how equivalence classes are formed dynamically based on the input constraints.
   4. Conflict Detection: The tool identifies and displays conflicts between terms as they arise during the execution of the algorithm.
   5. Interactive Interface: The web interface is designed to be user-friendly, with a Flask backend handling the algorithm’s logic and the frontend displaying real-time graph updates.
+
 ## Technologies Used
 1. Flask: A micro web framework for Python, used to build and host the web application on port 80.
 2. HTML: Used to create the form where users can input constraints.
@@ -22,14 +23,14 @@ This tool is designed for students and learners who are interested in exploring 
 
 This will start the Flask server on port 80. Open your browser and go to http://localhost to interact with the application.
 
-Usage:
-	1.	Open the web application in a browser.
-	2.	Enter a formula (such as constraints in the form of equalities or inequalities) into the input field.
-	3.	Submit the form to initiate the algorithm.
-	4.	Observe the step-by-step visualization of the Congruence Closure process, including the formation of equivalence classes and conflict detection.
+## Usage:
+1. Open the web application in a browser.
+2. Enter a formula (such as constraints in the form of equalities or inequalities) into the input field.
+3. Submit the form to initiate the algorithm.
+4. Observe the step-by-step visualization of the Congruence Closure process, including the formation of equivalence classes and conflict detection.
 
-Future Enhancements:
-	•	Implementing Backtracking to allow users to go back and explore previous stages of the graph.
-	•	Adding more detailed explanations and tooltips to each step of the visualization to further assist learning.
-	•	Extending the application to support more advanced logical constraints and operations beyond the current implementation.
+## Future Enhancements:
+1. Implementing Backtracking to allow users to go back and explore previous stages of the graph.
+2. Adding more detailed explanations and tooltips to each step of the visualization to further assist learning.
+3. Extending the application to support more advanced logical constraints and operations beyond the current implementation.
 ‭
