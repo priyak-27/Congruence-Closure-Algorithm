@@ -19,7 +19,7 @@ class CongruenceGraphVisualizer:
         self.auto_refresh = True
         self.message = ""
         self.wait = wait
-        self.fixed_positions = {}  # Store fixed positions for nodes
+        self.fixed_positions = {}  # Store fixed positions for nodes so it does not change.
 
     def add_constraint(self, t1, t2, color = "black"):
         self.graph.add_edge(t1, t2, color=color)
